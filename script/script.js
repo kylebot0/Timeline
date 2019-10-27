@@ -1,10 +1,4 @@
-function check() {
-  items = document.querySelectorAll(".tl-item");
-  console.log(items);
-  for (var i = 0; i < items.length; i++) {
-    items[i].style.backgroundColor = "green";
-  }
-}
+
 function checkHistory() {
   items = document.querySelectorAll(".tl-item");
   console.log(items);
@@ -19,8 +13,23 @@ function checkTimemachine() {
     items[i].style.backgroundColor = "orange";
   }
 }
+function checkIntrovert() {
+  items = document.querySelectorAll(".introvert");
+  console.log(items);
+  for (var i = 0; i < items.length; i++) {
+    items[i].style.backgroundColor = "green";
+  }
+}
+function checkExtrovert() {
+  items = document.querySelectorAll(".extrovert");
+  console.log(items);
+  for (var i = 0; i < items.length; i++) {
+    items[i].style.backgroundColor = "pink";
+  }
+}
 
 
-check();
 checkHistory();
 checkTimemachine();
+checkIntrovert();
+checkExtrovert();

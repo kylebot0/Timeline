@@ -2,9 +2,10 @@ body {
   font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 1.75;
-margin: 0;
-background: #031625;
+  margin: 0;
+  background: #031625;
 }
+
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
@@ -25,13 +26,15 @@ background: #031625;
 ::-webkit-scrollbar-thumb:window-inactive {
   background: darkblue;
 }
+
 .tl-info-box {
-    position: fixed;
-    display: flex;
- width: 100vw;
- height: 50px;
- z-index: 999;
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  z-index: 999;
 }
+
 i {
   color: white;
   font-size: 3em;
@@ -39,6 +42,7 @@ i {
   padding: 0.6em;
   z-index: 999;
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -56,25 +60,30 @@ i {
   visibility: visible;
   opacity: 1;
 }
+
 .orange {
   height: 50px;
   width: 25px;
   margin-bottom: 2em;
   background-color: orange;
 }
+
 .orange p {
   width: 1500%;
   margin-left: 30px;
 }
+
 .blue {
   height: 50px;
   width: 25px;
   background-color: blue;
 }
+
 .blue p {
   width: 1500%;
   margin-left: 30px;
 }
+
 .popup {
   margin: 70px auto;
   padding: 20px;
@@ -112,11 +121,12 @@ i {
 }
 
 #timeline {
+  margin-left: 115vw;
   display: flex;
   background-color: #031625;
   overflow-x: scroll;
   width: 750vw;
-  height: 90vh;
+  height: 100vh;
 }
 
 #timeline:hover .tl-item {
@@ -128,8 +138,8 @@ i {
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 25%;
-  height: 89vh;
-  min-height: 600px;
+  height: 10vh;
+  min-height: 20vh;
   color: #fff;
   overflow: hidden;
   transition: width 0.5s ease;
@@ -167,6 +177,7 @@ i {
 
 .tl-item:hover {
   width: 30% !important;
+  height: 20vh !important;
 }
 
 .tl-item:hover:after {
@@ -201,7 +212,7 @@ i {
   z-index: 1;
   text-align: center;
   margin: 0 1.618em;
-  top: 55%;
+  top: 35%;
   opacity: 0;
 }
 
@@ -209,13 +220,13 @@ i {
   font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #1779cf;
-  font-size: 1.44rem;
+  font-size: 1rem;
   font-weight: normal;
 }
 
 .tl-year {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
@@ -226,7 +237,7 @@ i {
 
 .tl-year p {
   font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 1.728rem;
+  font-size: 1rem;
   line-height: 0;
 }
 
@@ -245,4 +256,62 @@ i {
   transition: filter 0.5s ease, -webkit-filter 0.5s ease;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.time {
+  margin-top: 22vh;
+}
+
+.introvert {
+  margin-top: 44vh;
+  background-color: green;
+}
+
+.extrovert {
+  margin-top: 66vh;
+  background-color: pink;
+}
+
+.pre-timeline {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-timeline h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.pre-timeline-container {
+  display: flex;
+  height: 50vh;
+  width: 50vw;
+  margin-left: 5vw;
+  flex-direction: column;
+}
+
+.pre-timeline-container p {
+  color: darkgray;
+}
+
+.pre-timeline-container2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  width: 50vw;
+  text-align: right;
+  color: #0a457a;
+  font-size: 1rem;
+}
+
+.pre-timeline-container2 p {
+  margin-right: 5vw;
+}
+
+.blank {
+  opacity: 0;
 }
